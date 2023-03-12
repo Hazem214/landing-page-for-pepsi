@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    background-color:#0062be;
+ 
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+.logo{
+    padding-top: 10px;
+
+}
+.logo img:hover{
+    animation: loop 1s linear infinite;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+nav ul li{
+    list-style: none;
+    height: 100%;
+}
+nav ul a{
+    display: inline-block;
+    margin-right: 40px;
+    text-decoration:  none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+   
+}
+nav button{
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.content h2{
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+}
+.content span{
+    font-size: 150px;
+}
+.content p{
+    line-height: 1.5;
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: white;
+}
+.content a{
+text-decoration: none;
+background-color: red;
+padding: 10px;
+border-radius: 20px;
+background-color: white;
+color: black;
+font-size: 15px;
+font-weight: 600;
+}
+.content div img{
+    transition: .4s;
+}
+.content div img:hover{
+    transform: scale(1.3,1.3);
+}
+
+.change{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.change li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.change li:hover{
+    transform: translateY(-15%);
+}
+.change img{
+    width:  50px;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    right:-80px;
+    transform: translateY(-50%);
+}
+.social i{
+    padding-bottom: 33px;
+    font-size: 30px;
+    color: white;
+    transition: .4s;
+    cursor: pointer;
+}
+.social i:hover{
+    transform: scale(2,2);
+}
+@keyframes loop{
+ 
+    100%{
+        transform: rotate(360deg);
+    }
+
+    
+}
